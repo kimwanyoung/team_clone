@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오늘의집-회원정보수정</title>
+    <link rel="stylesheet" href="./css/user_info.css">
+    <link rel="stylesheet" href="./css/info_reset.css">
+</head>
+<body>
+    <main>
+        <nav>
+            <ul class="nav_bar nav_bar_main">
+                <li class="nav_item"><a href="#">프로필</a></li>
+                <li class="nav_item"><a href="#">나의 쇼핑</a></li>
+                <li class="nav_item"><a href="#">나의 리뷰</a></li>
+                <li class="nav_item"><a href="#">설정</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul class="nav_bar nav_bar_second">
+                <li class="nav_item"><a href="#">회원정보수정</a></li>
+                <li class="nav_item"><a href="#">알림 설정</a></li>
+                <li class="nav_item"><a href="#">사용자 숨기기 설정</a></li>
+                <li class="nav_item"><a href="#">전문가 신청</a></li>
+                <li class="nav_item"><a href="#">비밀번호 변경</a></li>
+                <li class="nav_item"><a href="#">추천코드</a></li>
+            </ul>
+        </nav>
+
+        <div class="info_wrap">
+            <!-- Info Header -->
+            <div class="info_head">
+                <h2>회원정보수정</h2>
+                <a href="">탈퇴하기</a>
+            </div>
+
+            <!-- Info Content -->
+            <div class="info_content">
+                <form action="">
+                    <!-- User Email -->
+                    <div class="info_item">
+                        <div class="info_header">
+                            <label for="user_email">이메일</label>
+                            <p>* 필수항목</p>
+                        </div>
+                        <div class="info_items_form user_email_from">
+                            <input class="user_email" id="user_email" type="text"> @
+                            <select class="email_select">
+                                <option value="">선택해주세요</option>
+                                <option value="naver.com">naver.com</option>
+                                <option value="nate.com">nate.com</option>
+                                <option value="hanmail.net">hanmail.net</option>
+                                <option value="gmail.com">gmail.com</option>
+                                <option value="yahoo.com">yahoo.com</option>
+                                <option value="yahoo.co.kr">yahoo.co.kr</option>
+                                <option value="hotmail.com">hotmail.com</option>
+                            </select>
+    
+                            <p class="email_desc">이메일을 변경하시려면 운영자에게 이메일을 보내주세요.</p>
+                        </div>
+                    </div>
+    
+                    <!-- User Nickname -->
+                    <div class="info_item">
+                        <div class="info_header">
+                            <label for="user_nickname">별명</label>
+                            <p>* 필수항목</p>
+                        </div>
+                        <div class="info_items_form">
+                            <input id="user_nickname" type="email">
+                        </div>
+                    </div>
+    
+                    <!-- User Homepage -->
+                    <div class="info_item">
+                        <div class="info_header">
+                            <label for="user_homepage">홈페이지</label>
+                        </div>
+                        <div class="info_items_form">
+                            <input id="user_homepage" type="text" placeholder="https://ohou.se">
+                        </div>
+                    </div>
+                    
+                    <!-- User Gender -->
+                    <div class="info_item">
+                        <div class="info_header">
+                            <label>성별</label>
+                        </div>
+                        <div class="user_gender">
+                            <label for="user_man">
+                                <input id="user_man" type="radio" name="user_gender" value="man" checked>
+                                <div class="radio_img"></div>
+                                남성
+                            </label>
+                            <label for="user_woman">
+                                <input id="user_woman" type="radio" name="user_gender" value="woman">
+                                <div class="radio_img"></div>
+                                여성
+                            </label>
+                        </div>
+                    </div>
+    
+                    <!-- User Birthday -->
+                    <div class="info_item">
+                        <div class="info_header">
+                            <label for="user_birthday">생년월일</label>
+                        </div>
+                        <div class="info_items_form">
+                            <input id="user_birthday" type="date" value="1995-01-01">
+                        </div>
+                    </div>
+    
+                    <!-- User Profile -->
+                    <div class="info_item">
+                        <div class="info_header">
+                            <label for="user_profile">프로필 이미지</label>
+                        </div>
+                        <div class="info_user_img">
+                            <input class="user_profile" id="user_profile" type="file" accept="image/png, image/jpeg">
+                            <img src="https://image.ohou.se/i/bucketplace-v2-development/uploads/default_images/avatar.png?gif=1&w=640&h=640&c=c" alt="">
+                        </div>
+                    </div>
+    
+                    <!-- User Introduce -->
+                    <div class="info_item">
+                        <div class="info_header">
+                            <label for="">한줄 소개</label>
+                        </div>
+                        <div class="info_items_form">
+                            <input type="text">
+                        </div>
+                    </div>
+    
+                    <!-- User Submit -->
+                    <button class="user_info_submit" type="submit">회원 정보 수정</button>
+                </form>
+            </div>
+            
+        </div>
+        
+
+
+    </main>
+</body>
+</html>
