@@ -47,6 +47,16 @@
     border: 1px solid #dbdbdb;
 }
 
+.ch-passwd-content input:focus{
+    outline: none;
+    box-shadow: 0 0 0 3px rgb(130 224 250 / 50%);
+}
+
+.ch-passwd-content-error{
+    outline: none;
+    box-shadow: 0 0 0 2px rgb(255 119 119 / 50%);
+}
+
 .ch-btn {
     display: inline-block;
     background-color: #35c5f0;
@@ -60,6 +70,7 @@
     transition: color .1s,background-color .1s,border-color .1s;
     border-radius: 4px;
     text-decoration: none;
-    box-shadow: none;
+    user-select: none;
+    cursor: pointer;
 }
 
