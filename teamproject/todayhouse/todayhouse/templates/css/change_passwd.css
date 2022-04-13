@@ -1,0 +1,11 @@
+.center{
+    justify-content: center;
+    line-height: 70px;
+}
+
+.ch-header-bottom{
+    font-size: 17px;
+}
+.ch-header-bottom a{
+    padding-right: 40px;
+}
