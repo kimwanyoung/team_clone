@@ -1,0 +1,142 @@
+* {box-sizing:border-box}
+
+.first-section {
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.first-section-content {
+    display: block;
+    padding: 0px;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 500px;
+    border-radius: 6px;
+    position: relative;
+}
+
+.mySlides {
+    display: none;
+}
+
+.first-section-left {
+    background-image: url(https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/projects/164723211153211955.jpg?gif=1&w=1536);
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    transition: background-size 3s ease-in;
+}
+
+.first-section-right {
+    overflow: hidden;
+    display: block;
+}
+
+.first-section-left:hover button {
+    background-color: #35c5f0;
+    border: 1px solid #35c5f0;
+}
+
+.first-section-btn {
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 15px;
+    width: 130px;
+    height: 55px;
+    color: #f2f2f2;
+    border: 1px solid white;
+    background-color: transparent;
+    margin-left: 50px;
+}
+
+.first-section-title {
+    display: inline-block;
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+    margin-right: 50px;
+}
+
+.first-section-title>p {
+    font-size: 13px;
+}
+
+.first-section-left:hover {
+    background-size: 110%;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #f2f2f2;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.active {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.first-section-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 100;
+}
+.first-section-menu img{
+    transform: scale(0.8, 0.8);
+    margin: 0px 10px 0px 10px;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
