@@ -38,7 +38,7 @@
 
             <!-- Info Content -->
             <div class="info_content">
-                <form action="">
+                <form action="" method="post" enctype="multipart/form-data">
                     <!-- User Email -->
                     <div class="info_item">
                         <div class="info_header">
@@ -46,18 +46,22 @@
                             <p>* 필수항목</p>
                         </div>
                         <div class="info_items_form user_email_from">
-                            <input class="user_email" id="user_email" type="text"> @
-                            <select class="email_select">
-                                <option value="">선택해주세요</option>
-                                <option value="naver.com">naver.com</option>
-                                <option value="nate.com">nate.com</option>
-                                <option value="hanmail.net">hanmail.net</option>
-                                <option value="gmail.com">gmail.com</option>
-                                <option value="yahoo.com">yahoo.com</option>
-                                <option value="yahoo.co.kr">yahoo.co.kr</option>
-                                <option value="hotmail.com">hotmail.com</option>
-                            </select>
-    
+                            <div class="user_email_form_container">
+                                <input class="user_email" id="user_email" type="text">
+                                <span>@</span>
+                                <select class="email_select">
+                                    <option value="">선택해주세요</option>
+                                    <option value="naver.com">naver.com</option>
+                                    <option value="nate.com">nate.com</option>
+                                    <option value="hanmail.net">hanmail.net</option>
+                                    <option value="gmail.com">gmail.com</option>
+                                    <option value="yahoo.com">yahoo.com</option>
+                                    <option value="yahoo.co.kr">yahoo.co.kr</option>
+                                    <option value="hotmail.com">hotmail.com</option>
+                                </select>
+                            </div>
+                            
+                            
                             <p class="email_desc">이메일을 변경하시려면 운영자에게 이메일을 보내주세요.</p>
                         </div>
                     </div>
@@ -107,7 +111,7 @@
                         <div class="info_header">
                             <label for="user_birthday">생년월일</label>
                         </div>
-                        <div class="info_items_form">
+                        <div class="info_items_form user_birthday">
                             <input id="user_birthday" type="date" value="1995-01-01">
                         </div>
                     </div>
@@ -118,7 +122,7 @@
                             <label for="user_profile">프로필 이미지</label>
                         </div>
                         <div class="info_user_img">
-                            <input class="user_profile" id="user_profile" type="file" accept="image/png, image/jpeg">
+                            <input class="user_profile" name="user_profile" id="user_profile" type="file" accept="image/png, image/jpeg">
                             <img src="https://image.ohou.se/i/bucketplace-v2-development/uploads/default_images/avatar.png?gif=1&w=640&h=640&c=c" alt="">
                         </div>
                     </div>
