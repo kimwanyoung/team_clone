@@ -71,3 +71,7 @@
     border: none;
 }
 
+
+.ch-btn:hover{
+    background-color: #3a9bb9;
+}

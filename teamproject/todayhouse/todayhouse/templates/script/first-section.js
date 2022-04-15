@@ -1,4 +1,4 @@
-let slideIndex = 1;
+let slideIndex = 0;
 showSlides(slideIndex);
 
 // Next/previous controls
@@ -14,16 +14,14 @@ function currentSlide(n) {
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {
-    slideIndex = 1;
+  if (n > slides.length - 1) {
+    slideIndex = 0;
   }
   if (n < 1) {
-    slideIndex = slides.length;
+    slideIndex = slides.length - 1;
   }
-  for (i = 0; i < slides.length; i++) {
+  for (i = 0; i < slides.length - 1; i++) {
     slides[i].style.display = "none";
   }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
+  slides[slideIndex].style.display = "block";
 }
