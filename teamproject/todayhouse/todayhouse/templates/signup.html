@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/signup.css" />
+    <script
+      src="https://kit.fontawesome.com/25b41d6433.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>예쁜템들 모여사는 오늘의집</title>
+    <link rel="icon" href="./images/icon.png" type="image/icon type" />
+  </head>
+
+  <body>
+    <!--헤더 로고 및 아이콘 부분-->
+    <header class="todayHouse_header">
+      <a href="main.html" class="icon"><img src="./images/icon.png" /></a>
+      <a href="main.html" class="logo"><img src="./images/logo.png" /></a>
+    </header>
+    <!--회원가입 부분-->
+    <section class="signup_content">
+      <h1 class="signup_header">회원가입</h1>
+      <div class="signup_sns">
+        <div class="signup_coment">SNS계정으로 간편하게 회원가입</div>
+        <ul class="sns">
+          <li class="facebook"><img src="./images/facebook.png" /></li>
+          <li class="kakaotalk"><img src="./images/kakao.png" /></li>
+          <li class="naver"><img src="./images/naver.png"</li>
+        </ul>
+      </div>
+
+      <form>
+        <!--이메일 파트-->
+        <div class="email_form">
+          <label class="email_label">이메일</label>
+          <div class="email_box">
+            <div class="email_input">
+              <span class="email_local">
+                <input
+                  class="form-control"
+                  placeholder="이메일"
+                  size="1"
+                  value
+                />
+              </span>
+              <span class="email_seperator">@</span>
+              <span class="email_domain">
+                <select class="form-control empty">
+                  <option value="disabled">선택해주세요</option>
+                  <option value="naver.com">naver.com</option>
+                  <option value="hanmail.net">hanmail.net</option>
+                  <option value="daum.net">daum.net</option>
+                  <option value="gmail.com">gmail.com</option>
+                  <option value="nate.com">nate.com</option>
+                  <option value="hotail.com">hotmail.com</option>
+                  <option value="outlook.com">outlook.com</option>
+                  <option value="icloud.com">icloud.com</option>
+                  <option value="_manual">직접입력</option>
+                </select>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="email_check">
+          <button class="checkOfEmail" name="emailAuth" type="button">
+            이메일 인증하기
+          </button>
+        </div>
+        <!--비밀번호 파트-->
+        <!--비밀번호 입력-->
+        <div class="" style="overflow: hidden"></div>
+        <div class="password">
+          <label class="password_label">비밀번호</label>
+          <div class="password_info">
+            영문, 숫자를 포함한 8자리 이상의 비밀번호를 입력해 주세요.
+          </div>
+          <input
+            class="password_input"
+            field="[object Object]"
+            name="password"
+            type="password"
+            placeholder="비밀번호"
+            value=""
+          />
+        </div>
+        <!--비밀번호 확인-->
+        <div class="password_check">
+          <label class="checkPassword_label">비밀번호 확인</label>
+          <input
+            class="checkPassword_input"
+            field="[object object]"
+            name="confirmPassword"
+            type="password"
+            placeholder="비밀번호 확인"
+            value=""
+          />
+        </div>
+        <!--닉네임-->
+        <div class="nickname">
+          <label class="nickname_label">닉네임</label>
+          <div class="nickname_info">
+            다른 유저와 겹치지 않는 별명을 입력해주세요. (2~15자)
+          </div>
+          <input
+            class="nickname_input"
+            field="[object Object]"
+            name="nickname"
+            placeholder="별명 (2~15자)"
+            value=""
+          />
+        </div>
+        <!--약관동의-->
+        <div class="agreement">
+          <label class="agreement_label">약관동의</label>
+          <div class="agreement_checkBox">
+            <div class="allCheck">
+              <label class="allCheck_label">
+                <div class="check">
+                  <input
+                    type="checkbox"
+                    class="checking"
+                    name="agreeAll"
+                    value=""
+                  />
+                </div>
+                <span>전체동의</span>
+              </label>
+            </div>
+            <label class="element_label">
+              <div class="check">
+                <input
+                  type="checkbox"
+                  class="checking"
+                  name="agreeAll"
+                  value=""
+                />
+              </div>
+              <span class="agrement_text"
+                ><div class="text1">
+                  만 14세 이상입니다.<span class="text3">(필수)</span>
+                </div></span
+              >
+            </label>
+            <label class="element_label">
+              <div class="check">
+                <input
+                  type="checkbox"
+                  class="checking"
+                  name="agreeAll"
+                  value=""
+                />
+              </div>
+              <span class="agrement_text"
+                ><div class="text2">
+                  이용약관<span class="text3">(필수)</span>
+                </div></span
+              >
+            </label>
+            <label class="element_label">
+              <div class="check">
+                <input
+                  type="checkbox"
+                  class="checking"
+                  name="agreeAll"
+                  value=""
+                />
+              </div>
+              <span class="agrement_text"
+                ><div class="text2">
+                  개인정보수집 및 동의(<span class="text3">(필수)</span>
+                </div></span
+              >
+            </label>
+            <label class="element_label">
+              <div class="check">
+                <input
+                  type="checkbox"
+                  class="checking"
+                  name="agreeAll"
+                  value=""
+                />
+              </div>
+              <span class="agrement_text"
+                ><div class="text2">
+                  이벤트, 프로모션 알림 메일 및 SNS 수신<span class="text3"
+                    >(선택)</span
+                  >
+                </div></span
+              >
+            </label>
+          </div>
+        </div>
+      </form>
+      <button class="gosignup" type="submit">회원가입하기</button>
+
+      <!--이미 아이디가 존재-->
+      <p class="already_id">
+        이미 아이디가 있으신가요?
+        <a href="login.html" class="already_login">로그인</a>
+      </p>
+    </section>
+  </body>
+</html>
