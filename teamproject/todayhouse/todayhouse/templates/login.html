@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>예쁜템들 모여사는 오늘의집</title>
+  <link rel="stylesheet" href="./css/login.css">  
+</head>
+<body>  
+  <div class="loginMain">    
+    <div class="ohouLogoOuter">      
+        <a href="main.html">
+          <span id="ohouLogo">
+          <img src="./images/icon.png" width="50.11px" height="50px">
+          </span>
+        <span id="ohouKorean">
+        <img src="./images/logo.png" width="85.09px" height="34.51px">
+        </span>
+      </a>
+  </div>
+    <form>
+      <div class="loginWindow">
+        <input id="inputEmail" type="email" position="top" placeholder="이메일">
+      </div>
+      <div class="loginWindow">
+        <input id="inputPassword" type="password" position="bottom" placeholder="비밀번호">
+      </div>
+      <div>
+        <input id="inputLogin" type="submit" value="로그인">
+      </div>
+      <a class="underLogin" href="change_passwd.html">비밀번호 재설정</a>
+      <a class="underLogin" id="signUp" href="signup.html">회원가입</a>
+  </form>
+    <div id="usingSns">SNS계정으로 간편 로그인/회원가입</div>
+    <div>
+      <a href=""><img class="snsLogos" src="./images/facebook.png"></image></a>
+      <a href=""><img class="snsLogos" src="./images/kakao.png"></image></a>
+      <a href=""><img class="snsLogos" src="./images/naver.png"></image></a>
+    </div>
+    <a href="https://ohou.se/customer_center"><div class="loginProblem">로그인에 문제가 있으신가요?</div></a>
+    <section class="orderCheck">
+      <script src="./script/login.js"></script>
+      <button class="checkButton" onclick="notCustomerOrderCheck()">비회원 주문 조회하기</button>
+      <div id="openOrderCheck" style="display: none">
+        <div><input class="orderCheckWindow" type="number" placeholder="주문번호" required>
+        </div>
+      <div><input class="orderCheckWindow" name="email" placeholder="이메일" required>        
+      </div>
+      <div class="insertRequired" id="orderNumber">필수 입력 항목입니다.</div>      
+        <div>
+          <input class="orderCheckSubmit" type="submit" value="주문조회">
+        </div>
+      </div>      
+    </section>
+  </div>
+  <footer>
+    © <a id="footerLink" href="https://www.bucketplace.co.kr/" target="_blank" rel="noopener noreferrer">bucketplace, Co., Ltd..</a> All Rights Reserved
+  </footer>
+</body>
+</html>
