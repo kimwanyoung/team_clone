@@ -39,6 +39,9 @@
     overflow: hidden;
     display: block;
 }
+.first-section-right img{
+    width: 300px;
+}
 
 .first-section-left:hover button {
     background-color: #35c5f0;

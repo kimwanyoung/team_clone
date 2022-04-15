@@ -10,6 +10,79 @@
     <script src="https://kit.fontawesome.com/25b41d6433.js" crossorigin="anonymous"></script>
     <title>예쁜템들 모여사는 오늘의집</title>
     <link rel="icon" href="./images/icon.png" type="image/icon type">
+    <style>
+        @media only screen and (max-width : 1400px){
+            .toggle-nav{
+                display: none;
+            }
+            .first-section-title{
+                font-size: 20px;
+            }
+        }
+
+        @media only screen and (max-width : 1250px) {
+            .header-content {
+                display: none;
+            }
+
+            .first-section-title{
+                font-size: 18px;
+            }
+
+        }
+
+        /* Medium Devices, Desktops : ~ 992px */
+        @media only screen and (max-width : 992px) {
+            .header-input {
+                display: none;
+            }
+            .bottom {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                text-align: center;
+                font-size: 10px;
+                justify-content: space-around;
+            }
+            .header-nav {
+                display: none;
+            }
+
+            .header-logo{
+                width: 100%;
+                display: block;
+                text-align: center;
+                
+            }
+            html,body{
+                margin: 0;
+                padding: 0;
+            }
+            .first-section{
+                display: block;
+                padding: 0;
+                margin: 0;
+            }
+            .first-section-left{
+                padding: 0;
+                margin: 0;
+            }
+            .first-section-right{
+                height: 300px;
+                margin: 0;
+                padding: 0;
+            }
+            .first-section-right img{
+                width: 100%;
+                height: 300px;
+            }
+            .first-section-title{
+                font-size: 16px;
+            }
+        }
+
+        /* Small Devices, Tablets : ~ 768px */
+    </style>
 </head>
 
 <body>
@@ -63,26 +136,26 @@
         </div>
         <div class="first-section-right first-section-content">
             <div class="mySlides fade">
-                <img src="https://image.ohou.se/i/bucketplace-v2-development/uploads/banners/home_banner/164959904585613030.png?gif=1&w=1024"
-                    style="width:100%">
+                <img
+                    src="https://image.ohou.se/i/bucketplace-v2-development/uploads/banners/home_banner/164959904585613030.png?gif=1&w=1024">
             </div>
 
             <div class="mySlides fade">
-                <img src="https://image.ohou.se/i/bucketplace-v2-development/uploads/banners/home_banner/164959935381088856.png?gif=1&w=1024"
-                    style="width:100%">
+                <img
+                    src="https://image.ohou.se/i/bucketplace-v2-development/uploads/banners/home_banner/164959935381088856.png?gif=1&w=1024">
             </div>
 
             <div class="mySlides fade">
-                <img src="https://image.ohou.se/i/bucketplace-v2-development/uploads/banners/home_banner/164007392450862954.png?gif=1&w=1024"
-                    style="width:100%">
+                <img
+                    src="https://image.ohou.se/i/bucketplace-v2-development/uploads/banners/home_banner/164007392450862954.png?gif=1&w=1024">
             </div>
             <div class="mySlides fade">
                 <img src="https://image.ohou.se/i/bucketplace-v2-development/uploads/banners/home_banner/164481959638920407.png?gif=1&w=1024"
-                    alt="" style="width: 100%;">
+                    alt="">
             </div>
             <div class="mySlides fade">
                 <img src="https://image.ohou.se/i/bucketplace-v2-development/uploads/banners/home_banner/164959914962480991.png?gif=1&w=1024"
-                    alt="" style="width: 100%;">
+                    alt="">
             </div>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
