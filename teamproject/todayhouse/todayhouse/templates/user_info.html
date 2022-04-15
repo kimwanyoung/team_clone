@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,64 @@
     <link rel="stylesheet" href="./css/user_info.css">
     <link rel="stylesheet" href="./css/info_reset.css">
     <link rel="stylesheet" href="./css/main.css">
+    <style>
+        @media only screen and (max-width : 1400px) {
+            .toggle-nav {
+                display: none;
+            }
+
+            .first-section-title {
+                font-size: 20px;
+            }
+        }
+
+        @media only screen and (max-width : 1250px) {
+            .header-content {
+                display: none;
+            }
+
+            .first-section-title {
+                font-size: 18px;
+            }
+
+        }
+
+        @media only screen and (max-width : 992px) {
+            .header-input {
+                display: none;
+            }
+            .bottom {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                text-align: center;
+                font-size: 10px;
+                justify-content: space-around;
+            }
+
+            .header-nav {
+                display: none;
+            }
+
+            .header-logo {
+                width: 100%;
+                display: block;
+                text-align: center;
+
+            }
+
+            #bottom-section-two a {
+                font-size: 10px;
+            }
+
+            #bottom-section-two {
+                padding: 0;
+                margin: 0;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <div class="header">
@@ -102,12 +160,12 @@
                                     <option value="hotmail.com">hotmail.com</option>
                                 </select>
                             </div>
-                            
-                            
+
+
                             <p class="email_desc">이메일을 변경하시려면 운영자에게 이메일을 보내주세요.</p>
                         </div>
                     </div>
-    
+
                     <!-- User Nickname -->
                     <div class="info_item">
                         <div class="info_header">
@@ -118,7 +176,7 @@
                             <input id="user_nickname" type="email">
                         </div>
                     </div>
-    
+
                     <!-- User Homepage -->
                     <div class="info_item">
                         <div class="info_header">
@@ -128,7 +186,7 @@
                             <input id="user_homepage" type="text" placeholder="https://ohou.se">
                         </div>
                     </div>
-                    
+
                     <!-- User Gender -->
                     <div class="info_item">
                         <div class="info_header">
@@ -147,7 +205,7 @@
                             </label>
                         </div>
                     </div>
-    
+
                     <!-- User Birthday -->
                     <div class="info_item">
                         <div class="info_header">
@@ -157,18 +215,20 @@
                             <input id="user_birthday" type="date" value="1995-01-01">
                         </div>
                     </div>
-    
+
                     <!-- User Profile -->
                     <div class="info_item">
                         <div class="info_header">
                             <label for="user_profile">프로필 이미지</label>
                         </div>
                         <div class="info_user_img">
-                            <input class="user_profile" name="user_profile" id="user_profile" type="file" accept="image/png, image/jpeg">
-                            <img src="https://image.ohou.se/i/bucketplace-v2-development/uploads/default_images/avatar.png?gif=1&w=640&h=640&c=c" alt="">
+                            <input class="user_profile" name="user_profile" id="user_profile" type="file"
+                                accept="image/png, image/jpeg">
+                            <img src="https://image.ohou.se/i/bucketplace-v2-development/uploads/default_images/avatar.png?gif=1&w=640&h=640&c=c"
+                                alt="">
                         </div>
                     </div>
-    
+
                     <!-- User Introduce -->
                     <div class="info_item">
                         <div class="info_header">
@@ -178,16 +238,17 @@
                             <input type="text">
                         </div>
                     </div>
-    
+
                     <!-- User Submit -->
                     <button class="user_info_submit" type="submit">회원 정보 수정</button>
                 </form>
             </div>
-            
+
         </div>
-        
+
 
 
     </main>
 </body>
+
 </html>
