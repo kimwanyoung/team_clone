@@ -11,43 +11,73 @@
     <title>비밀번호 변경</title>
     <link rel="icon" href="./images/icon.png" type="image/icon type">
     <style>
-         @media only screen and (max-width : 1400px){
-            .toggle-nav{
+        @media only screen and (max-width : 1400px) {
+            .toggle-nav {
                 display: none;
             }
-            .first-section-title{
+
+            .first-section-title {
                 font-size: 20px;
             }
         }
+
         @media only screen and (max-width : 1250px) {
             .header-content {
                 display: none;
             }
 
-            .first-section-title{
+            .first-section-title {
                 font-size: 18px;
             }
 
+            #bottom-section-two {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                padding: 0;
+                margin: 0;
+            }
+
+            #bottom-section-two a {
+                font-size: 12px;
+                padding: 0px 10px;
+                margin: 0;
+            }
+
         }
+
         @media only screen and (max-width : 992px) {
             .header-input {
                 display: none;
             }
+
+            .bottom {
+                width: 100%;
+                font-size: 18px;
+                text-align: center;
+            }
+
             .header-nav {
                 display: none;
             }
-            .header-logo{
+
+            .header-logo {
                 width: 100%;
                 display: block;
                 text-align: center;
-                
+
             }
-            #bottom-section-two a{
-                font-size: 10px;
+            body {
+                min-width: 600px;
             }
-            #bottom-section-two{
-                padding: 0;
-                margin: 0;
+        }
+        @media only screen and (max-width : 700px){
+            .ch-passwd-content{
+                box-shadow: none;
+                width: 100%;
+            }
+            .ch-passwd-content input{
+                width: 100%;
             }
         }
     </style>
@@ -76,9 +106,12 @@
                 <span> | </span>
                 <a class="remove-deco" href="#">고객센터</a>
             </div>
-            <nav class="toggle-nav">
-                <a class="remove-deco" style="color: white;" href="#">글쓰기 v</a>
-            </nav>
+            <button class="toggle-nav" type="button">글쓰기<svg class="icon" width="1rem" height="1rem" viewBox="0 0 16 16"
+                    preserveAspectRatio="xMidYMid meet">
+                    <path fill="currentColor" fill-rule="evenodd" d="M2.87 4L1.33 5.5 8 12l6.67-6.5L13.13 4 8 9z">
+                    </path>
+                </svg>
+            </button>
         </div>
 
         <div class="header bottom center ch-header-bottom">
